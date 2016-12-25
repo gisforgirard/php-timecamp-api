@@ -1,0 +1,21 @@
+{
+  "name": "gisforgirard/timecamp-api",
+  "description": "PHP wrapper for Timecamp API",
+  "keywords": ["Timecamp", "PHP", "API"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "G isfor Girard",
+      "homepage": "http://www.disappearghost.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "autoload":{
+    "psr-0":{
+      "Timecamp\\": ""
+    }
+  }
+}
