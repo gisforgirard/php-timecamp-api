@@ -100,7 +100,7 @@ $timer = $timecamp_client->Timer->status($array);
 
 $timer = $timecamp_client->Timer->stop($array);
 
-### ComputerActivities (camel case function names? not sure...)
+### ComputerActivities (probably want to look at the individual files or documentation here, things are a bit different)
 $activities = $timecamp_client->ComputerActivities()->getActivity('2014-03-07');
 
 $activities = $timecamp_client->ComputerActivities()->getApplication(6319,2132);
