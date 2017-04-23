@@ -26,7 +26,7 @@ foreach ($activities as $this_activity) {
 
 ```
 
-##Authentication
+## Authentication
 
 Authentication is very simple. You must pass your Timecamp API token when instantiating `Timecamp\Connection`. Example:
 
