@@ -1,4 +1,4 @@
-#php-timecamp-api
+# php-timecamp-api
 
 A [Timecamp](http://www.timecamp.com/) PHP client. Presents returned data from the [Timecamp API](https://github.com/timecamp2/timecamp-api) as associative arrays.
 
