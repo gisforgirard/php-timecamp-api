@@ -44,7 +44,7 @@ abstract class AbstractApi
                     $params = array('form_params' => $params);
                     break;
                 case 'PUT':
-                    $params = array('body' => $params);
+                    $params = array('form_params' => $params);
                     break;
             }
         }
