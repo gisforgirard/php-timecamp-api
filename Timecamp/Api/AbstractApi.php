@@ -53,6 +53,7 @@ abstract class AbstractApi
         try {
             $response = $http_client->request($method, $resource, $params);
         } catch (RequestException $e) {
+            return null;
             return Psr7\str($e->getResponse());
         }
         
