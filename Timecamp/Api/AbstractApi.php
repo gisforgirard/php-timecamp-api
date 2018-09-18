@@ -49,16 +49,13 @@ abstract class AbstractApi
             }
         }
         $http_client = new Client(['base_uri' => $access_info['base_url']]);
-        //echo $resource;return false;
-
+        
         try {
             $response = $http_client->request($method, $resource, $params);
         } catch (RequestException $e) {
-            echo Psr7\str($e->getRequest());
-            if ($e->hasResponse()) {
-                echo Psr7\str($e->getResponse());
-            }
+            return Psr7\str($e->getResponse());
         }
+        
         $response = $response->getBody();
         $response = (array)json_decode($response, true);
         return $response;
