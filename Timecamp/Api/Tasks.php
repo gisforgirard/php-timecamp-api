@@ -22,7 +22,6 @@ class Tasks extends AbstractApi
      *
      * (optional) exclude_archived: 1 or 0 (default - we give both archived and not archived tasks)
      *
-     * @param string $task_id
      * @return array
      *
      *
