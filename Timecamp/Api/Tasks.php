@@ -27,13 +27,9 @@ class Tasks extends AbstractApi
      *
      *
      */
-    public function get($task_id = '')
+    public function get(array $params = array())
     {
-        if ($task_id) {
-            return $this->request('GET', 'tasks/', ['task_id' => $task_id]);
-        } else {
-            return $this->request('GET', 'tasks/');
-        }
+        return $this->request('GET', 'tasks/', $params);
     }
 
     /**
