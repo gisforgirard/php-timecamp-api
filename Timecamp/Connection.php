@@ -26,7 +26,7 @@ class Connection
     /**
      * @var null
      */
-    protected $api_token = null;
+    public $api_token = null;
 
     /**
      * Connection constructor.

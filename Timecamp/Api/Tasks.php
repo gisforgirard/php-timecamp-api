@@ -22,18 +22,13 @@ class Tasks extends AbstractApi
      *
      * (optional) exclude_archived: 1 or 0 (default - we give both archived and not archived tasks)
      *
-     * @param string $task_id
      * @return array
      *
      *
      */
-    public function get($task_id = '')
+    public function get(array $params = array())
     {
-        if ($task_id) {
-            return $this->request('GET', 'tasks/', ['task_id' => $task_id]);
-        } else {
-            return $this->request('GET', 'tasks/');
-        }
+        return $this->request('GET', 'tasks/', $params);
     }
 
     /**
