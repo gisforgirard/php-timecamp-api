@@ -5,7 +5,7 @@ A [Timecamp](http://www.timecamp.com/) PHP client. Presents returned data from t
 ## Installation
 
 ```shell
-$ composer require timecamp/php-timecamp-api
+$ composer require gisforgirard/php-timecamp-api
 ```
 
 ## Usage
